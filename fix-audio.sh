@@ -1,3 +1,4 @@
+#!/bin/bash
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root, write sudo!! to restart with root rights and enter your password!"
    exit 1
@@ -8,7 +9,7 @@ fi
 
 echo "Start fix"
 
-#!/bin/bash
+
 echo "=== ФИКС ЗВУКА И МИКРОФОНА Infinix Inbook Y3 Plus ==="
 
 sudo tee /etc/modprobe.d/fix-infinix-alc269.conf > /dev/null <<EOF
